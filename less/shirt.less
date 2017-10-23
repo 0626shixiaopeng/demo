@@ -1,0 +1,367 @@
+@charset "UTF-8";
+.box{}
+/*-------------------------------------------header--------------------------------------------*/
+header{
+  max-width: 1170px;
+  height: 107px;
+  margin: 0 auto;
+
+  .logo{
+    width:174px;
+    margin-top: 21px;
+  }
+
+  nav{
+    margin-top: 37px;
+    position: relative;
+
+    ul.nav{
+
+      li{
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+
+        a{
+          font: 18px/32px "微软雅黑";
+          display: block;
+          width: 120px;
+          color: #101010;
+        }
+        a:hover{
+          color: #fff;
+        }
+      }
+    }
+
+    ul.skin{
+      position: absolute;
+      right: 0;
+      li{
+        float:left;
+        margin-right:4px;
+        width:15px;
+        height:15px;
+        text-indent:-9999px;
+        overflow:hidden;
+        display:block;
+        cursor:pointer;
+        background-image:url(../images/theme.gif);
+      }
+      #skin_0 { background-position:0px 0px; }
+      #skin_1 { background-position:15px 0px; }
+      #skin_2 { background-position:35px 0px; }
+      #skin_3 { background-position:55px 0px; }
+      #skin_4 { background-position:75px 0px; }
+      #skin_5 { background-position:95px 0px; }
+      #skin_0.selected { background-position:0px 15px; }
+      #skin_1.selected { background-position:15px 15px; }
+      #skin_2.selected { background-position:35px 15px; }
+      #skin_3.selected { background-position:55px 15px; }
+      #skin_4.selected { background-position:75px 15px; }
+      #skin_5.selected { background-position:95px 15px; }
+    }
+  }
+}
+
+/*-------------------------------------------subject-------------------------------------------*/
+.subject{
+  margin-top: 40px;
+  .subject_wai{
+    max-width:1170px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #ededed;
+    
+    .subject_w_left{
+      text-align: center;
+      .imgList{
+        width: 126px;
+        margin-right: 20px;
+        li{
+          height: 94px;
+          border: 6px solid #e0e0e0;
+          text-align: center;
+          margin-bottom: 10px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .subject_w_left_d{
+        position: relative;
+        div{
+          width: 350px;
+          text-align: center;
+        }
+        a{
+          position: absolute;
+          bottom: 0;
+          right: 20px;
+        }
+      }
+
+    }
+    .subject_w_right{
+      width: 450px;
+      .subject_w_r_top{
+        h2{
+          font: 24px/24px "pingFang SC Bold";
+          color:#000;
+          font-weight: bold;
+        }
+        h3{
+          font: 24px/60px "pingFang SC Heavy";
+          color: #000;
+          font-weight: bold;
+        }
+        p{
+          color: #666;
+          position: relative;
+          font: 14px/14px "pingFang SC Heavy";
+          padding-bottom: 18px;
+          border-bottom: 2px solid #ededed;
+          span{
+            font: 18px/18px "pingFang SC Ragular";
+            color: #ff4b4b;
+          }
+          .p_qu{
+            padding-left: 20px;
+            font: 12px/12px "pingFang SC Ragular";
+            color: #838383;
+            position: relative;
+            text-decoration: line-through;
+          }
+          .p_ri{
+            position: absolute;
+            right: 0;
+            color: #666;
+          }
+        }
+      }
+      .subject_w_r_center{
+        p{
+          font: 18px/56px "pingFang SC Ragular";
+          color: #000;
+          span{
+            color: #8c8c8c;
+            font-size: 14px;
+            padding-left: 290px;
+          }
+        }
+        ul li{
+          margin-right: 20px;
+        }
+        .pro_size{
+          h2{
+            font: 16px/54px "pingFang SC Ragular";
+            color: #000;
+          }
+          ul{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ededed;
+            li{
+              height: 32px;
+              line-height: 32px;
+              select{
+                height: 32px;
+              }
+              .select1{
+                padding: 0 20px 0 30px;
+                height: 32px;
+              }
+              &:last-child{
+                color: #ff6d6d;
+              }
+            }
+          }
+        }
+      }
+      .subject_w_r_bottom{
+        input{
+          width: 130px;
+          height: 32px;
+          font:14px/32px "PingFang SC Ragular";
+          background:#ff6000;
+          color: #ffd7bf;
+          margin-bottom: 14px;
+        }
+        h2{
+          font: 18px/46px "PingFang SC Ragular";
+          color: #000;
+        }
+        p{
+          font: 14px/24px "PingFang SC Ragular";
+          color: #838383;
+        }
+      }
+    }
+  }
+}
+
+//<!-------------------------------------------product------------------------------------------->
+.product{
+  .product_wai{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 52px;
+    img{
+      width: 430px;
+      margin-right: 40px;
+    }
+    .product_w_right{
+      width: 700px;
+      ul{
+        margin-bottom: 25px;
+        li{
+          width:180px;
+          height:50px;
+          border: 1px solid #e0e0e0;
+          margin-right: 16px;
+          text-align: center;
+          line-height: 50px;
+          a{
+            font:20px/50px "pingFang SC Ragular";
+            color:#8c8c8c;
+            display: block;
+            &.dianj{
+              background: #000;
+              color: #fff;
+            }
+            &:hover{
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+      p{
+        font: 14px/24px "pingFang SC Ragular";
+        color: #8c8c8c;
+        display: none;
+        &.xians{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//<!------------------------------------------Recommend------------------------------------------>
+.Recommend{
+  .Recommend_E{
+    width: 1170px;
+    margin: 40px auto;
+    text-align: center;
+    h2{
+      border-top: 2px solid #ededed;
+      border-bottom: 2px solid #ededed;
+      font: 22px/64px "pingFang SC Ragular";
+      color: #010101;
+    }
+    div.pro_rating{
+      text-align: center;
+      h3{
+        font: 18px/58px "pingFang SC Ragular";
+        color: #666;
+      }
+      .rating{
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}
+
+
+//<!------------------------------------------evaluate------------------------------------------->
+.evaluate{
+  .evaluate_E{
+    width: 1170px;
+    margin: 0 auto;
+    //text-align: center;
+    //position: relative;
+    h2{
+      text-align: center;
+      font: 24px/100px "PingFang SC Bold";
+      color: #000;
+    }
+
+    .als-container {
+      position: relative;
+      width: 100%;
+      margin: 0px auto;
+      //z-index: 0;
+      .als-prev, .als-next {
+        position: absolute;
+        cursor: pointer;
+        clear: both;
+        top: 150px;
+      }
+      .als-prev {
+        left: 0;
+      }
+      .als-next {
+        right: 0;
+      }
+      .als-viewport {
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto;
+        width: 1040px!important;
+        height:318px!important;
+        .als-wrapper {
+          position: relative;
+          list-style: none;
+          width: 2080px!important;
+          padding: 0;
+          .als-item {
+            position: relative;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            margin: 0px 15px;
+            padding: 4px 0px;
+            min-height: 120px;
+            min-width: 100px;
+            text-align: center;
+            img {
+              display: block;
+              margin: 0 auto;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*------------------------------------------footer-------------------------------------------*/
+footer{
+  background: #000;
+  margin-top: 40px;
+  .footer_E{
+    max-width: 1170px;
+    margin: 0 auto;
+    color: #fff;
+    .p1{
+      width: 401px;
+      margin-bottom:26px;
+      padding-top: 26px;
+      font: 16px/26px "pingFang SC Ragular";
+      border-bottom: 1px solid #fff;
+    }
+    .p2{
+      color: #7f7f7f;
+      height: 95px;
+      line-height: 95px;
+      text-align: center;
+      font: 14px/95px "pingFang SC Ragular";
+    }
+  }
+}
+

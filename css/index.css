@@ -1,0 +1,514 @@
+@charset "UTF-8";
+/*-------------------------------------------header--------------------------------------------*/
+header {
+  max-width: 1170px;
+  height: 107px;
+  margin: 0 auto;
+}
+header .logo {
+  width: 174px;
+  margin-top: 21px;
+}
+header nav {
+  margin-top: 37px;
+  position: relative;
+}
+header nav ul.nav li {
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+header nav ul.nav li a {
+  font: 18px/32px "微软雅黑";
+  display: block;
+  width: 120px;
+  color: #101010;
+}
+header nav ul.nav li a:hover {
+  color: #fff;
+}
+header nav ul.skin {
+  position: absolute;
+  right: 0;
+}
+header nav ul.skin li {
+  float: left;
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  background-image: url(../images/theme.gif);
+}
+header nav ul.skin #skin_0 {
+  background-position: 0px 0px;
+}
+header nav ul.skin #skin_1 {
+  background-position: 15px 0px;
+}
+header nav ul.skin #skin_2 {
+  background-position: 35px 0px;
+}
+header nav ul.skin #skin_3 {
+  background-position: 55px 0px;
+}
+header nav ul.skin #skin_4 {
+  background-position: 75px 0px;
+}
+header nav ul.skin #skin_5 {
+  background-position: 95px 0px;
+}
+header nav ul.skin #skin_0.selected {
+  background-position: 0px 15px;
+}
+header nav ul.skin #skin_1.selected {
+  background-position: 15px 15px;
+}
+header nav ul.skin #skin_2.selected {
+  background-position: 35px 15px;
+}
+header nav ul.skin #skin_3.selected {
+  background-position: 55px 15px;
+}
+header nav ul.skin #skin_4.selected {
+  background-position: 75px 15px;
+}
+header nav ul.skin #skin_5.selected {
+  background-position: 95px 15px;
+}
+/*------------------------------------------lunbo--------------------------------------------*/
+.lunbo .flexslider {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background: url(../images/loading.gif) 50% no-repeat;
+}
+.lunbo .slides {
+  position: relative;
+  z-index: 1;
+}
+.lunbo .slides li {
+  height: 400px;
+  cursor: pointer;
+}
+.lunbo .flex-control-nav {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+.lunbo .flex-control-nav li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  *display: inline;
+  zoom: 1;
+}
+.lunbo .flex-control-nav a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 40px;
+  overflow: hidden;
+  background: url(../images/dot.png) right 0 no-repeat;
+  cursor: pointer;
+}
+.lunbo .flex-control-nav .flex-active {
+  background-position: 0 0;
+}
+.lunbo .flex-direction-nav {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 45%;
+}
+.lunbo .flex-direction-nav li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+}
+.lunbo .flex-direction-nav li a.flex-prev {
+  left: 40px;
+  background: url(../images/prev.png) center center no-repeat;
+}
+.lunbo .flex-direction-nav li a.flex-next {
+  right: 40px;
+  background: url(../images/next.png) center center no-repeat;
+}
+/*-------------------------------------Boutique promotion------------------------------------*/
+.Boutique_promotion {
+  max-width: 1170px;
+  margin: 55px auto 0;
+}
+.Boutique_promotion .B_left h2 {
+  font: 20px/30px "pingFang SC Bold";
+  color: #000;
+  font-weight: bold;
+}
+.Boutique_promotion .B_left h3 {
+  font: 20px/32px "pingFang SC Bold";
+  color: #000000;
+  font-weight: bold;
+}
+.Boutique_promotion .B_left ul li {
+  position: relative;
+}
+.Boutique_promotion .B_left ul li h4 {
+  font: 14px/44px "pingFang SC Bold";
+  color: #000000;
+  font-weight: bold;
+}
+.Boutique_promotion .B_left ul li h4 img {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.Boutique_promotion .B_left ul li ul li a {
+  font: 14px/24px "pingFang SC Bold";
+  color: #666;
+  text-indent: 14px;
+  display: block;
+}
+.Boutique_promotion .B_left ul li ul li a:hover {
+  color: #ed6a6a;
+}
+.Boutique_promotion .B_left .h2_2 {
+  margin-top: 34px;
+}
+.Boutique_promotion .B_left .scrollNews {
+  margin-top: 8px;
+  height: 96px;
+  overflow: hidden;
+}
+.Boutique_promotion .B_left .scrollNews ul li {
+  font: 14px/24px "pingFang SC Bold";
+  color: #666;
+}
+.Boutique_promotion .B_right {
+  max-width: 906px;
+  text-align: center;
+}
+.Boutique_promotion .B_right h2 {
+  display: block;
+  width: 275px;
+  height: 38px;
+  border: 3px solid #666;
+  text-align: center;
+  font: 20px/38px "pingFang SC Bold";
+  margin: 29px auto 0;
+  position: relative;
+}
+.Boutique_promotion .B_right h2:after {
+  content: '';
+  position: absolute;
+  top: -29px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 46px;
+  height: 23px;
+  border: 3px solid #666;
+  border-radius: 100px 100px 0 0;
+}
+.Boutique_promotion .B_right h3 {
+  font: 22px/40px "pingFang SC Bold";
+  color: #000;
+  margin-bottom: 30px;
+}
+.Boutique_promotion .B_right .B_r_img {
+  height: 462px;
+}
+.Boutique_promotion .B_right .B_r_img img {
+  transition: 1s;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_left,
+.Boutique_promotion .B_right .B_r_img .B_r_center {
+  margin-right: 18px;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_center,
+.Boutique_promotion .B_right .B_r_img .B_r_right {
+  max-width: 276px;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_left {
+  max-width: 317px;
+  height: 462px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_center .B_r_c_top {
+  cursor: pointer;
+  position: relative;
+  height: 221px;
+  overflow: hidden;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_center .B_r_c_bottom {
+  margin-top: 20px;
+  height: 221px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_top {
+  cursor: pointer;
+  position: relative;
+  height: 221px;
+  overflow: hidden;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom {
+  margin-top: 20px;
+  height: 221px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom .xians1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom .xians1 p {
+  display: block;
+  font: 38px/46px "pingFang SC Ragular";
+  color: #000;
+  padding: 16px 30px;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom .xians1 p:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transition: 1s;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom .xians1 p:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  transition: 1s;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom:hover p:after {
+  width: 81px;
+  height: 81px;
+  border-top: 4px solid #98999f;
+  border-left: 4px solid #98999f;
+}
+.Boutique_promotion .B_right .B_r_img .B_r_right .B_r_r_bottom:hover p:before {
+  width: 81px;
+  height: 81px;
+  border-bottom: 4px solid #98999f;
+  border-right: 4px solid #98999f;
+}
+.Boutique_promotion .B_right .B_r_img .yinc1,
+.Boutique_promotion .B_right .B_r_img .yinc2 {
+  width: 191px;
+  height: 52px;
+  background: #000;
+  opacity: 0.4;
+  padding: 20px 0 20px 20px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  transition: 1s;
+}
+.Boutique_promotion .B_right .B_r_img .yinc1 p,
+.Boutique_promotion .B_right .B_r_img .yinc2 p {
+  color: #fff;
+}
+.Boutique_promotion .B_right .B_r_img .yinc1 .p1,
+.Boutique_promotion .B_right .B_r_img .yinc2 .p1 {
+  font: 18px/28px "pingFang SC Ragular";
+}
+.Boutique_promotion .B_right .B_r_img .yinc1 .p2,
+.Boutique_promotion .B_right .B_r_img .yinc2 .p2 {
+  font: 16px/24px "pingFang SC Ragular";
+}
+.Boutique_promotion .B_right .B_r_img .yinc1 {
+  bottom: 66px;
+  opacity: 0;
+}
+.Boutique_promotion .B_right .B_r_img .yinc2 {
+  bottom: 0;
+  opacity: 0;
+}
+.Boutique_promotion .B_r_left:hover .yinc1 {
+  bottom: 118px;
+  opacity: 0.4;
+}
+.Boutique_promotion .B_r_c_top:hover .yinc2,
+.Boutique_promotion .B_r_c_bottom:hover .yinc2,
+.Boutique_promotion .B_r_r_top:hover .yinc2,
+.Boutique_promotion .B_r_r_bottom:hover .yinc2 {
+  bottom: 22px;
+  opacity: 0.4;
+}
+.Boutique_promotion .B_r_left:hover img,
+.Boutique_promotion .B_r_c_top:hover img,
+.Boutique_promotion .B_r_c_bottom:hover img,
+.Boutique_promotion .B_r_r_top:hover img,
+.Boutique_promotion .B_r_r_bottom:hover img {
+  transform: scale(1.2);
+}
+/*--------------------------------------SIMPLE    PANTS--------------------------------------*/
+.SIMPLE_PANTS {
+  margin-top: 40px;
+  background: url("../images/PANTS.jpg") no-repeat center;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E {
+  max-width: 1170px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e {
+  /*width:;
+      height:;*/
+  position: absolute;
+  top: 181px;
+  right: 183px;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e p {
+  color: #000;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p1.p2 {
+  font-family: "CharlemagneStd Bold";
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p1 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 22px;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p2 {
+  height: 48px;
+  line-height: 48px;
+  font-size: 36px;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p3,
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p4 {
+  font-family: "pingFang SC Ragular";
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p3 {
+  height: 96px;
+  line-height: 96px;
+  font-size: 56px;
+  font-weight: bold;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p4 {
+  height: 50px;
+  line-height: 50px;
+  font-size: 19px;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e .p4 span {
+  font-family: "PingFang SC Heavy";
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+}
+.SIMPLE_PANTS .SIMPLE_PANTS_E .SIMPLE_PANTS_E_e input {
+  padding: 0 35px;
+  color: #fff;
+  background: #c2c6e1;
+  font: 20px/38px "PingFang SC Heavy";
+  cursor: pointer;
+}
+.SIMPLE_PANTS img {
+  width: 100%;
+  height: 100%;
+}
+/*---------------------------------------New arrival-----------------------------------------*/
+.New_arrival {
+  margin-top: 60px;
+}
+.New_arrival .New_arrival_E {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.New_arrival .New_arrival_E h2 {
+  display: block;
+  width: 275px;
+  height: 38px;
+  border: 3px solid #666;
+  text-align: center;
+  font: 20px/38px "pingFang SC Bold";
+  margin: 29px auto 0;
+  position: relative;
+}
+.New_arrival .New_arrival_E h2:after {
+  content: '';
+  position: absolute;
+  top: -29px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 46px;
+  height: 23px;
+  border: 3px solid #666;
+  border-radius: 100px 100px 0 0;
+}
+.New_arrival .New_arrival_E h3 {
+  font: 22px/40px "pingFang SC Bold";
+  color: #000;
+  margin-bottom: 30px;
+}
+.New_arrival .New_arrival_E .tempWrap {
+  width: 1056px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.New_arrival .New_arrival_E .tempWrap ul {
+  width: 2376px;
+  position: relative;
+  left: -264px;
+}
+.New_arrival .New_arrival_E .tempWrap ul li {
+  width: 244px;
+  height: 462px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.New_arrival .New_arrival_E .tempWrap ul li div {
+  margin-top: 20px;
+  height: 221px;
+}
+.New_arrival .New_arrival_E .tempWrap ul li div:first-child {
+  margin-top: 0;
+}
+.New_arrival .New_arrival_E .tempWrap ul li img {
+  width: 100%;
+  height: 100%;
+}
+/*------------------------------------------footer-------------------------------------------*/
+footer {
+  background: #000;
+  margin-top: 40px;
+}
+footer .footer_E {
+  max-width: 1170px;
+  margin: 0 auto;
+  color: #fff;
+}
+footer .footer_E .p1 {
+  width: 401px;
+  margin-bottom: 26px;
+  padding-top: 26px;
+  font: 16px/26px "pingFang SC Ragular";
+  border-bottom: 1px solid #fff;
+}
+footer .footer_E .p2 {
+  color: #7f7f7f;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  font: 14px/95px "pingFang SC Ragular";
+}

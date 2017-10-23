@@ -1,0 +1,7 @@
+header nav ul.nav li a:hover{
+	background:#E31559!important;
+}
+header nav ul.nav li a.xians{
+	background:#E31559!important;
+	color: #fff;
+}

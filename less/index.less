@@ -1,0 +1,461 @@
+@charset "UTF-8";
+.box{}
+/*-------------------------------------------header--------------------------------------------*/
+  header{
+    max-width: 1170px;
+    height: 107px;
+    margin: 0 auto;
+
+    .logo{
+      width:174px;
+      margin-top: 21px;
+    }
+
+    nav{
+      margin-top: 37px;
+      position: relative;
+
+      ul.nav{
+        
+        li{
+          width: 120px;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+
+          a{
+            font: 18px/32px "微软雅黑";
+            display: block;
+            width: 120px;
+            color: #101010;
+          }
+          a:hover{
+            color: #fff;
+          }
+        }
+      }
+
+      ul.skin{
+        position: absolute;
+        right: 0;
+        li{
+          float:left;
+          margin-right:4px;
+          width:15px;
+          height:15px;
+          text-indent:-9999px;
+          overflow:hidden;
+          display:block;
+          cursor:pointer;
+          background-image:url(../images/theme.gif);
+        }
+        #skin_0 { background-position:0px 0px; }
+        #skin_1 { background-position:15px 0px; }
+        #skin_2 { background-position:35px 0px; }
+        #skin_3 { background-position:55px 0px; }
+        #skin_4 { background-position:75px 0px; }
+        #skin_5 { background-position:95px 0px; }
+        #skin_0.selected { background-position:0px 15px; }
+        #skin_1.selected { background-position:15px 15px; }
+        #skin_2.selected { background-position:35px 15px; }
+        #skin_3.selected { background-position:55px 15px; }
+        #skin_4.selected { background-position:75px 15px; }
+        #skin_5.selected { background-position:95px 15px; }
+      }
+    }
+  }
+
+/*------------------------------------------lunbo--------------------------------------------*/
+.lunbo{
+  .flexslider{position:relative;height:400px;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+  .slides{position:relative;z-index:1;}
+  .slides li{height:400px;cursor: pointer;}
+  .flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+  .flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+  .flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../images/dot.png) right 0 no-repeat;cursor:pointer;}
+  .flex-control-nav .flex-active{background-position:0 0;}
+
+  .flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+  .flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+  .flex-direction-nav li a.flex-prev{left:40px;background:url(../images/prev.png) center center no-repeat;}
+  .flex-direction-nav li a.flex-next{right:40px;background:url(../images/next.png) center center no-repeat;}
+}
+
+/*-------------------------------------Boutique promotion------------------------------------*/
+.Boutique_promotion {
+  max-width: 1170px;
+  margin: 55px auto 0;
+
+  .B_left {
+
+    h2 {
+      font: 20px/30px "pingFang SC Bold";
+      color: #000;
+      font-weight: bold;
+    }
+    h3 {
+      font: 20px/32px "pingFang SC Bold";
+      color: #000000;
+      font-weight: bold;
+    }
+    ul {
+
+      li {
+        position: relative;
+
+        h4 {
+          font: 14px/44px "pingFang SC Bold";
+          color: #000000;
+          font-weight: bold;
+          img {
+            margin-left: 12px;
+            cursor: pointer;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              font: 14px/24px "pingFang SC Bold";
+              color: #666;
+              text-indent: 14px;
+              display: block;
+            }
+            a:hover {
+              color: #ed6a6a;
+            }
+          }
+        }
+      }
+    }
+    .h2_2{
+      margin-top: 34px;
+    }
+    .scrollNews{
+      margin-top: 8px;
+      height: 96px;
+      overflow: hidden;
+      ul{
+        li{
+          font: 14px/24px "pingFang SC Bold";
+          color: #666;
+        }
+      }
+    }
+  }
+  .B_right {
+    max-width: 906px;
+    text-align: center;
+    h2 {
+      display: block;
+      width: 275px;
+      height: 38px;
+      border: 3px solid #666;
+      text-align: center;
+      font: 20px/38px "pingFang SC Bold";
+      margin: 29px auto 0;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 46px;
+        height: 23px;
+        border: 3px solid #666;
+        border-radius: 100px 100px 0 0;
+      }
+    }
+    h3{
+      font: 22px/40px "pingFang SC Bold";
+      color: #000;
+      margin-bottom: 30px;
+    }
+    .B_r_img{
+      height: 462px;
+      img{
+        transition: 1s;
+      }
+      .B_r_left,.B_r_center{
+        margin-right: 18px;
+      }
+      .B_r_center,.B_r_right{
+        max-width: 276px;
+      }
+      .B_r_left{
+        max-width: 317px;
+        height: 462px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .B_r_center{
+        .B_r_c_top{
+          cursor: pointer;
+          position: relative;
+          height: 221px;
+          overflow: hidden;
+        }
+        .B_r_c_bottom{
+          margin-top: 20px;
+          height: 221px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+        }
+      }
+      .B_r_right{
+        .B_r_r_top{
+          cursor: pointer;
+          position: relative;
+          height: 221px;
+          overflow: hidden;
+        }
+        .B_r_r_bottom{
+          margin-top: 20px;
+          height: 221px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          .xians1{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            p{
+              display: block;
+              font: 38px/46px "pingFang SC Ragular";
+              color: #000;
+              padding: 16px 30px;
+              &:after{
+                content: '';
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 0;
+                height: 0;
+                transition: 1s;
+              }
+              &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                transition: 1s;
+              }
+            }
+          }
+        }
+        .B_r_r_bottom:hover{
+          p{
+            &:after{
+              width: 81px;
+              height: 81px;
+              border-top: 4px solid #98999f;
+              border-left: 4px solid #98999f;
+            }
+            &:before{
+              width: 81px;
+              height: 81px;
+              border-bottom: 4px solid #98999f;
+              border-right: 4px solid #98999f;
+            }
+          }
+        }
+      }
+      .yinc1,.yinc2{
+        width: 191px;
+        height: 52px;
+        background: #000;
+        opacity: 0.4;
+        padding: 20px 0 20px 20px;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        transition: 1s;
+        p{
+          color: #fff;
+        }
+        .p1{
+          font: 18px/28px "pingFang SC Ragular";
+        }
+        .p2{
+          font: 16px/24px "pingFang SC Ragular";
+        }
+      }
+      .yinc1{ bottom: 66px;  opacity: 0;}
+      .yinc2{ bottom: 0;  opacity: 0;}
+    }
+  }
+  .B_r_left:hover .yinc1{
+    bottom: 118px;
+    opacity: 0.4;
+  }
+  .B_r_c_top:hover .yinc2,.B_r_c_bottom:hover .yinc2,.B_r_r_top:hover .yinc2,.B_r_r_bottom:hover .yinc2{
+    bottom: 22px;
+    opacity: 0.4;
+  }
+  .B_r_left:hover img,.B_r_c_top:hover img,.B_r_c_bottom:hover img,.B_r_r_top:hover img,.B_r_r_bottom:hover img{
+    transform: scale(1.2);
+  }
+
+}
+
+/*--------------------------------------SIMPLE    PANTS--------------------------------------*/
+.SIMPLE_PANTS{
+  margin-top: 40px;
+  background: url("../images/PANTS.jpg") no-repeat center;
+  .SIMPLE_PANTS_E{
+    max-width: 1170px;
+    height: 600px;
+    margin:0 auto;
+    position: relative;
+    .SIMPLE_PANTS_E_e{
+      /*width:;
+      height:;*/
+      position: absolute;
+      top:181px;
+      right:183px;
+      p{
+        color: #000;
+      }
+      .p1.p2{
+        font-family: "CharlemagneStd Bold";
+      }
+      .p1{
+        height: 36px;
+        line-height: 36px;
+        font-size: 22px;
+      }
+      .p2{
+        height: 48px;
+        line-height: 48px;
+        font-size: 36px;
+      }
+      .p3,.p4{
+        font-family: "pingFang SC Ragular";
+      }
+      .p3{
+        height: 96px;
+        line-height: 96px;
+        font-size: 56px;
+        font-weight: bold;
+      }
+      .p4{
+        height: 50px;
+        line-height: 50px;
+        font-size: 19px;
+        span{
+          font-family: "PingFang SC Heavy";
+          height: 50px;
+          line-height: 50px;
+          font-size: 24px;
+        }
+      }
+      input{
+        padding: 0 35px;
+        color: #fff;
+        background: #c2c6e1;
+        font: 20px/38px "PingFang SC Heavy";
+        cursor: pointer;
+      }
+    }
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*---------------------------------------New arrival-----------------------------------------*/
+.New_arrival{
+  margin-top: 60px;
+  .New_arrival_E{
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      display: block;
+      width: 275px;
+      height: 38px;
+      border: 3px solid #666;
+      text-align: center;
+      font: 20px/38px "pingFang SC Bold";
+      margin: 29px auto 0;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 46px;
+        height: 23px;
+        border: 3px solid #666;
+        border-radius: 100px 100px 0 0;
+      }
+    }
+    h3{
+      font: 22px/40px "pingFang SC Bold";
+      color: #000;
+      margin-bottom: 30px;
+    }
+    .tempWrap{
+      width: 1056px;
+      overflow: hidden;
+      margin: 0 auto;
+      ul{
+        width: 2376px;
+        position: relative;
+        left: -264px;
+        li{
+          width: 244px;
+          height: 462px;
+          margin-right: 20px;
+          cursor: pointer;
+          div{
+            margin-top: 20px;
+            height: 221px;
+          }
+          div:first-child{
+            margin-top: 0;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*------------------------------------------footer-------------------------------------------*/
+footer{
+  background: #000;
+  margin-top: 40px;
+  .footer_E{
+    max-width: 1170px;
+    margin: 0 auto;
+    color: #fff;
+    .p1{
+      width: 401px;
+      margin-bottom:26px;
+      padding-top: 26px;
+      font: 16px/26px "pingFang SC Ragular";
+      border-bottom: 1px solid #fff;
+    }
+    .p2{
+      color: #7f7f7f;
+      height: 95px;
+      line-height: 95px;
+      text-align: center;
+      font: 14px/95px "pingFang SC Ragular";
+    }
+  }
+}
+
